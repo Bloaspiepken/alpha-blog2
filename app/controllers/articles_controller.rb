@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
   
   
   def create
-    debugger
+    #debugger
     @article = Article.new(article_params)
     @article.user = User.first
   
@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
   def update
     if @article.update(article_params)
     
-      flash[:success] = "Article was succesfully updated"
+      flash[:succes] = "Article was succesfully updated"
       redirect_to article_path(@article)
     else
       render 'edit'
