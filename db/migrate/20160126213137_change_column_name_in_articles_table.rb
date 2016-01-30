@@ -1,5 +1,5 @@
 class ChangeColumnNameInArticlesTable < ActiveRecord::Migration
   def change
-    rename_column :article, :updated_at
+    rename_column :articles, :update, :updated_at
   end
 end
